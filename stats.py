@@ -9,7 +9,10 @@ def get_num_character(book_text):
     count_num = {}
 
 
-    for letters in book_text:
-         if letters in count_num:
-              count_num[letters] += 1
+    for letter in book_text:
+        if letter in count_num:
+            count_num[letter] += 1
+        else:
+            count_num[letter] = 1
+
     return count_num
